@@ -1,0 +1,26 @@
+\documentclass{article}
+% Define a simple command
+\newcommand{\hello}{Hello, Latex!}
+
+% Define a command with a parameter
+\newcommand{\greet}[2]{Hello, #1!. i am Defining new commands. Welcome #2}
+
+% Define a command for vectors
+\newcommand{\vect}[1]{\vec{#1}}
+
+% Define a command for partial derivatives
+\newcommand{\pdo}[2]{\displaystyle \frac{\partial #1}{\partial #2}}
+\newcommand{\pdt}[2]{\displaystyle \frac{\partial ^2 #1}{\partial #2^2}}
+\begin{document}
+
+\hello
+
+
+\greet{\LaTeX}{Eat Code}
+\section*{Using command for Vectors}
+$\vect{v}$
+
+$\pdo 2x3y$ \\
+\centering
+$\pdt xy$
+\end{document}
